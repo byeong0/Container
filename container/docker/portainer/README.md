@@ -1,5 +1,5 @@
 # docker build path
-ssg-brain-app/
+.
 
 # docker build name
 - byeong0/portainer:latest

@@ -1,5 +1,5 @@
 # docker build path
-ssg-brain-app/
+.
 
 # docker build name
 - byeong0/anaconda3:10.0-cudnn7
