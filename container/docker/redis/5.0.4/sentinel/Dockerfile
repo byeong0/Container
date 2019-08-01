@@ -4,7 +4,7 @@ FROM lgatica/redis-sentinel:4.0.2
 ## 복사/추가 하는파일의 Container내 경로는 항상 절대경로로 작성하여야 한다.
 RUN rm -rf /usr/local/bin/sentinel-entrypoint.sh
 #COPY docker/container/redis/sentinel/sentinel.conf /usr/local/bin/sentinel.conf
-COPY container/docker/redis/sentinel/sentinel-entrypoint.sh /usr/local/bin/sentinel-entrypoint.sh
+COPY 5.0.4/sentinel/sentinel-entrypoint.sh /usr/local/bin/sentinel-entrypoint.sh
 
 ## change access authority
 #RUN chmod 755 /usr/local/bin/sentinel.conf

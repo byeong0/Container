@@ -31,7 +31,7 @@ ENV TZ=Asia/Seoul
 #RUN rm /etc/localtime
 #RUN dpkg-reconfigure -f noninteractive tzdata
 
-COPY container/docker/requirements.txt /usr/src/
+COPY requirements.txt /usr/src/
 WORKDIR /usr/src/
 
 #pip install

@@ -21,7 +21,7 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL C.UTF-8
 
-COPY container/docker/requirements.txt /usr/src/
+COPY requirements.txt /usr/src/
 WORKDIR /usr/src/
 
 #pip install

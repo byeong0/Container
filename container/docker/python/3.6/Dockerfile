@@ -40,7 +40,7 @@ RUN    cd /usr/bin \
     && ln -sf python3 python \
     && ln -sf pip3 pip
 
-COPY container/docker/requirements.txt /usr/src/
+COPY requirements.txt /usr/src/
 WORKDIR /usr/src
 
 #pip install

@@ -7,7 +7,7 @@ RUN rm -rf /usr/local/bin/docker-entrypoint.sh
 # 공통적으로 적용할 redis.conf 파일을 복사합니다.
 
 # Container가 생성, 시작하는 시점에 실행 시킬 docker-entrypoint.sh 파일을 복사합니다.
-COPY container/docker/redis/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+COPY 5.0.4/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 
 ## change access authority
 #RUN chmod 755 /usr/local/bin/redis.conf
