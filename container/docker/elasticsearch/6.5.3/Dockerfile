@@ -4,10 +4,10 @@ MAINTAINER Byeong0, <byeong0@gmail.com>
 
 RUN bin/elasticsearch-plugin install analysis-nori
 
-COPY --chown=elasticsearch:elasticsearch elasticsearch/6.5.3/elasticsearch.yml /usr/share/elasticsearch/config/
-COPY --chown=elasticsearch:elasticsearch elasticsearch/6.5.3/jvm.options /usr/share/elasticsearch/config/
+COPY --chown=elasticsearch:elasticsearch container/docker/elasticsearch/6.5.3/elasticsearch.yml /usr/share/elasticsearch/config/
+COPY --chown=elasticsearch:elasticsearch container/docker/elasticsearch/6.5.3/jvm.options /usr/share/elasticsearch/config/
 
-COPY elasticsearch/limits.conf /etc/security/
+COPY container/docker/elasticsearch/limits.conf /etc/security/
 
 #EXPOSE 9200
 #EXPOSE 9300
