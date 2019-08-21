@@ -12,6 +12,10 @@ from googletrans import Translator
 
 app = Flask(__name__)
 
+
+HashedControlPassword = '16:872860B76453A77D60CA2BB8C1A7042072093276A3D701AD684053EC4C'
+
+
 # signal TOR for a new connection
 def renew_connection():
     renew_connection_strt_time = time.time()

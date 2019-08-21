@@ -1,5 +1,6 @@
 FROM byeong0/python:3.6
 
+MAINTAINER Byeong0, <byeong0@gmail.com>
 
 # Install dependencies
 RUN apt-get update && \
