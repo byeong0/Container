@@ -1,7 +1,5 @@
 FROM docker.elastic.co/elasticsearch/elasticsearch:6.5.3
 
-MAINTAINER Byeong0, <byeong0@gmail.com>
-
 RUN bin/elasticsearch-plugin install analysis-nori
 
 COPY --chown=elasticsearch:elasticsearch 6.5.3/elasticsearch.yml /usr/share/elasticsearch/config/

@@ -1,7 +1,5 @@
 FROM tensorflow/tensorflow:1.10.0-devel-gpu-py3
 
-MAINTAINER Byeong0, <byeong0@gmail.com>
-
 # Install dependencies
 RUN apt-get update && \
     apt-get install -y \

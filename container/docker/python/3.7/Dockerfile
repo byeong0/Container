@@ -1,7 +1,5 @@
 FROM python:3.7
 
-MAINTAINER Byeong0, <byeong0@gmail.com>
-
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install dependencies

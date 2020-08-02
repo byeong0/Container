@@ -1,8 +1,6 @@
 FROM byeong0/anaconda3:9.0-cudnn7
 #https://hub.docker.com/r/continuumio/anaconda3/
 
-MAINTAINER Byeong0, <byeong0@gmail.com>
-
 # Install dependencies and create dirs
 RUN apt-get -qq update && apt-get install -y software-properties-common apt-utils locales tzdata \
         libssl-dev \
